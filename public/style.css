@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+.ticket-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.ticket-row {
+    display: flex;
+}
+
+.num-box {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.housie-board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+}
+
+.number-cell {
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.number-cell.marked {
+    background-color: #ff6666;
+    color: white;
+}
+
+.called-numbers {
+    margin-top: 20px;
+    font-size: 18px;
+}
+/* CSS */
+.marked {
+    background-color: yellow;
+}
+
+.unmarked {
+    background-color: white;
+}

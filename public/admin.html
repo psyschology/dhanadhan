@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Admin Panel</h1>
+
+    <!-- Set Game Time -->
+    <div>
+        <h2>Set Game Time</h2>
+        <input type="datetime-local" id="gameTime">
+        <button onclick="setGameTime()">Set Game Time</button>
+    </div>
+
+    <!-- Set Ticket Limit -->
+    <div>
+        <h2>Set Ticket Limit</h2>
+        <input type="number" id="ticketLimit" placeholder="Enter Ticket Limit">
+        <button onclick="setTicketLimit()">Set Ticket Limit</button>
+    </div>
+
+    <!-- Book Ticket -->
+    <div>
+        <h2>Book Ticket</h2>
+        <input type="number" id="ticketNumber" placeholder="Enter Ticket Number">
+        <input type="text" id="buyerName" placeholder="Enter Buyer Name">
+        <button onclick="bookTicket()">Book Ticket</button>
+    </div>
+
+    <!-- Start and Stop Game -->
+    <div>
+        <h2>Game Control</h2>
+        <button id="start-game">Start Game</button>
+        <button id="reset-game">Stop Game</button>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
