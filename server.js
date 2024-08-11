@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Handle the root URL
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'admin.html')); // Or user.html
+    res.sendFile(path.join(__dirname, 'public', 'user.html')); // Or user.html
 });
 
 const port = process.env.PORT || 3000;
